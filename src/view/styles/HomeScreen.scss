@@ -1,0 +1,122 @@
+.HomeScreen {
+    width: 100vw;
+    height: 100vh;
+
+    .HomeLeft {
+        background-color: #0f183b;
+        width: 20rem;
+        .left_icons{
+            cursor: pointer;
+        }
+        .left_icons:hover{
+            background-color: #162252;  
+            transition: 0.4s; 
+        }
+
+        .HomeLeft-nav {
+            color: #fff;
+            background-color: #2b41ac;
+            width: 100%;
+            padding-block: 0.6rem;
+            padding-inline: 1rem;            
+
+            .HomeLeft-nav-im {
+                background-color: #fff;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 100%;
+            }
+
+            .HomeLeft-nav-name_status {
+                width: 80%;
+                height: fit-content;
+                padding-left: 10px;
+
+                .HomeLeft-nav-name {
+                    font-size: 1.3rem;
+                    margin-top: -2px;
+                }
+
+                .HomeLeft-nav-status {
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                }                
+            }                        
+        }
+    }
+
+    .HomeRight {
+        width: 100%;
+
+        .top-nav {
+            background-color: #1d3091;
+
+            .top-nav-left {
+                display: none;
+            }
+
+            .top-nav-mid {
+                width: 100%;
+                height: 100%;
+                background-color: #1d3091;
+            }
+
+            .top-nav-rit {
+                width: 12rem;
+                height: 100%;
+                background-color: rgb(255, 102, 0);
+            }
+        }
+    }
+}
+
+@media (max-width: 955px) {
+    .HomeScreen {
+        .HomeLeft {
+            display: none;
+        }
+        .HomeRight {
+            .top-nav{
+                .top-nav-left{
+                    display: flex;
+                    background-color: rgb(255, 102, 0);
+                    height: 100%;
+                    width: 4.5rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 715px) {
+    .HomeScreen {
+        .HomeRight {
+            .top-nav{
+                .top-nav-rit {
+                    width: 14rem;
+                    height: 100%;
+                    background-color: rgb(255, 102, 0);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .HomeScreen {
+        .HomeRight {
+            .top-nav{
+                .top-nav-rit{
+                    width: 30%;
+                }
+                #comp_name{
+                    display: none;
+                }
+                #my_logo{
+                    margin-right: 4px;
+                }
+                #naam{
+                    display: none;
+                }
+            }
+        }
+    }
+}
